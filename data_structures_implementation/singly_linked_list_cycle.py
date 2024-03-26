@@ -6,6 +6,7 @@ class ListNode:
         self.val = val
         self.next = None
 
+
 # Individual nodes
 node1 = ListNode(1)
 node2 = ListNode(2)
