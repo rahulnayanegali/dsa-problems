@@ -103,7 +103,7 @@ bst.insert(60)
 bst.insert(80)
 
 # Traversals
-# print("Inorder traversal:", bst.inorder_traversal())  # Output: [20, 30, 40, 50, 60, 70, 80]
+print("Inorder traversal:", bst.inorder_traversal())  # Output: [20, 30, 40, 50, 60, 70, 80]
 print("Preorder traversal:", bst.preorder_traversal())  # Output: [50, 30, 20, 40, 70, 60, 80]
 print("Postorder traversal:", bst.postorder_traversal())  # Output: [20, 40, 30, 60, 80, 70, 50]
 
