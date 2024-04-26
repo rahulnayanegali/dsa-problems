@@ -17,7 +17,7 @@ def reverse_linked_list(head):
     return prev
 
 
-def createLinkedList(lst):
+def create_linked_list(lst):
     dummy = Node()
     curr = dummy
     for val in lst:
