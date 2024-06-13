@@ -10,7 +10,7 @@ def top_k_elements(nums, k):
             heapq.heappop(k_nums)
             heapq.heappush(k_nums, nums[i])
 
-    return k_nums
+    return k_nums[:k]
 
 
 print(top_k_elements([3, 2, 1, 5, 6, 4], 2))
