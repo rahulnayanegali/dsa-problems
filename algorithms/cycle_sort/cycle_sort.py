@@ -9,6 +9,13 @@ def swap(arr, a, b):
     arr[b] = temp
 
 
+def xor_swap(arr, i, j):
+    if i != j:
+        arr[i] = arr[i] ^ arr[j]
+        arr[j] = arr[i] ^ arr[j]
+        arr[i] = arr[i] ^ arr[j]
+
+
 def cycle_sort(arr):
     """
     Syntax
@@ -24,7 +31,7 @@ def cycle_sort(arr):
     while i < len(arr):
         # [1,5,2,3,4]
         if arr[i] != i + 1:
-            swap(arr, i, arr[i] - 1)
+            xor_swap(arr, i, arr[i] - 1)
         else:
             i += 1
     return arr

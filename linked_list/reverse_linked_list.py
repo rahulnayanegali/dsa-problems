@@ -25,6 +25,7 @@ def create_linked_list(lst):
         curr = curr.next
     return dummy.next
 
+
 # Helper function to print a linked list
 def print_linked_list(head):
     curr = head
@@ -35,7 +36,7 @@ def print_linked_list(head):
     print(" -> ".join(lst))
 
 
-head = createLinkedList([1, 2, 3, 4, 5])
+head = create_linked_list([1, 2, 3, 4, 5])
 print("Original List: ", end="")
 print_linked_list(head)
 reversed_head = reverse_linked_list(head)

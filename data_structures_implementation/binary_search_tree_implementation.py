@@ -107,11 +107,11 @@ print("Inorder traversal:", bst.inorder_traversal())  # Output: [20, 30, 40, 50,
 print("Preorder traversal:", bst.preorder_traversal())  # Output: [50, 30, 20, 40, 70, 60, 80]
 print("Postorder traversal:", bst.postorder_traversal())  # Output: [20, 40, 30, 60, 80, 70, 50]
 
-# Search
-print(bst.search(30))  # Output: <__main__.TreeNode object at 0x7f1c8c8f2e50>x
-print(bst.search(90))  # Output: None
-
-# Delete
-bst.delete(20)
-bst.delete(30)
-print("Inorder traversal:", bst.inorder_traversal())  # Output: [20, 30, 40, 50, 60, 70, 80]
+# # Search
+# print(bst.search(30))  # Output: <__main__.TreeNode object at 0x7f1c8c8f2e50>x
+# print(bst.search(90))  # Output: None
+#
+# # Delete
+# bst.delete(20)
+# bst.delete(30)
+# print("Inorder traversal:", bst.inorder_traversal())  # Output: [20, 30, 40, 50, 60, 70, 80]
