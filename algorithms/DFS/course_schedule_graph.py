@@ -17,7 +17,7 @@ class Solution:
                     return True
 
                 if neighbor not in visited:
-                    if self.dfs(neighbor):
+                    if dfs(neighbor):
                         return True
 
             recursion_stack.remove(course)
@@ -25,7 +25,7 @@ class Solution:
 
         for course in range(numCourses):
             if course not in visited:
-                if self.dfs(course):
+                if dfs(course):
                     return False
 
         return True
