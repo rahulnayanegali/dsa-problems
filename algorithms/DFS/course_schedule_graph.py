@@ -19,7 +19,7 @@ class Solution:
                 if neighbor not in visited:
                     if dfs(neighbor):
                         return True
-
+            
             recursion_stack.remove(course)
             return False
 
@@ -39,5 +39,4 @@ class Solution:
         return graph
 
 
-
-
+        
