@@ -1,6 +1,4 @@
-To build your muscle memory for coding patterns, here are some frequently asked questions by companies that cover the patterns we discussed:
-
-To build your muscle memory for coding patterns, here are some frequently asked questions by companies that cover the patterns:
+#To build your muscle memory for coding patterns, here are some frequently asked questions by companies that cover the patterns:
 
 ## Two Pointers Pattern
 
