@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 To build your muscle memory for coding patterns, here are some frequently asked questions by companies that cover the patterns we discussed:
+=======
+
+
+To build your muscle memory for coding patterns, here are some frequently asked questions by companies that cover the patterns:
+>>>>>>> 9675628636714a6830f9138501d367c05c0de64f
 
 ## Two Pointers Pattern
 
