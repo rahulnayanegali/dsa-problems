@@ -31,23 +31,28 @@
 2. "Container With Most Water"
     ``` javascript
     /** 
-     * @param {number[]} height
-     * @return {number}
+     * Finds the maximum area of water that can be contained between two vertical lines
+     * Time Complexity: O(n) - We traverse the array once with two pointers
+     * Space Complexity: O(1) - We use constant extra space
+     * 
+     * @param {number[]} height - Array where each element represents the height of a vertical line
+     * @return {number} - Maximum area of water that can be contained
      */
     var maxArea = function(height) {
-        let left = 0;                    // Left pointer starts at beginning
-        let right = height.length - 1;   // Right pointer starts at end
-        let max_area = 0;                // Track maximum area found
+        let left = 0;                    // Left pointer starts at beginning of array
+        let right = height.length - 1;   // Right pointer starts at end of array
+        let max_area = 0;                // Track maximum area found so far
 
         while (left < right) {
-            const width = right - left;  // Calculate current width
-            const currentHeight = Math.min(height[left], height[right]);  // Height is min of two sides
-            const area = width * currentHeight;  // Calculate current area
+            const width = right - left;  // Calculate current width between two lines
+            const currentHeight = Math.min(height[left], height[right]);  // Height is limited by shorter line
+            const area = width * currentHeight;  // Calculate current area (width * height)
 
             if (area > max_area) 
-                max_area = area;  // Update max area if current is larger
+                max_area = area;  // Update max area if current area is larger
 
-            // Move the pointer with smaller height
+            // Move the pointer with smaller height to potentially find a larger area
+            // We move the shorter line because moving the taller line can't increase the area
             if (height[left] > height[right]) 
                 right -= 1;
             else 
